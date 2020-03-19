@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Register Form</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="code.js">	</script>
@@ -12,132 +13,14 @@
 	<!-- Navbar -->
 	<div id = "navber">
 		<ul>
-		  <li><a href="#home">Home</a></li>
-		  <li><a class="active" href="#create">Create Account</a></li>
+		  <li><a class="active" href="#home">Home</a></li>
+		  <li><a href="signup.html">Create Account</a></li>
 		  <li><a href="login.html">Log In</a></li>
-		  <li><a href="#contact">Contact</a></li>
+		  <li><a href="contact.html">Contact</a></li>
 		  <li><a href="#about" >About</a></li>
 		</ul>
 	</div>
 
-	<form class = "signup-form" action = "#">
-	
-		<!-- form header -->
-	    <div class="form-header">
-	    	<h1>Create Account</h1>
-	    </div>
-
-	    <!-- form body -->
-	    <div class="form-body">
-
-	    	<!-- Firstname and Lastname -->
-		    <div class="horizontal-group">
-
-		        <div class="form-group left">
-		            <label for="firstname" class="label-title">First name *</label>
-		            <input type="text" id="firstname" class="form-input" placeholder="enter your first name" required="required" />
-		        </div>
-
-		        <div class="form-group right">
-		            <label for="lastname" class="label-title">Last name</label>
-		            <input type="text" id="lastname" class="form-input" placeholder="enter your last name" />
-		        </div>
-
-		    </div>
-
-		    <!-- Email -->
-			<div class="form-group">
-			  	<label for="email" class="label-title">Email*</label>
-			  	<input type="email" id="email" class="form-input" placeholder="enter your email" required="required">
-			</div>
-
-			<!-- Passwrod and confirm password -->
-			<div class="horizontal-group">
-
-				<div class="form-group left">
-				    <label for="password" class="label-title">Password *</label>
-				    <input type="password" id="password" class="form-input" placeholder="enter your password" required="required">
-				</div>
-
-
-				<div class="form-group right">
-				    <label for="confirm-password" class="label-title">Confirm Password *</label>
-				    <input type="password" class="form-input" id="confirm-password" placeholder="enter your password again" required="required">
-				</div>
-
-			</div>
-
-			<!-- Gender and Hobbies -->
-			<div class="horizontal-group">
-
-				<!-- Gender -->
-			    <div class="form-group left">
-			        <label class="label-title">Gender:</label>
-			        <div class="input-group">
-			            <label for="male">
-			                <input type="radio" name="gender" value="male" id="male"> Male</label>
-			            <label for="female">
-			                <input type="radio" name="gender" value="female" id="female"> Female</label>
-			        </div>
-			    </div>
-
-			    <!-- Hobbies -->
-			    <div class="form-group right">
-			        <label class="label-title">Hobbies</label>
-			        <div>
-			            <label>
-			                <input type="checkbox" value="Web">Music</label>
-			            <label>
-			                <input type="checkbox" value="iOS">Sports</label>
-			            <label>
-			                <input type="checkbox" value="Andriod">Travel</label>
-			            <label>
-			                <input type="checkbox" value="Game">Movies</label>
-			        </div>
-			    </div>
-			    
-			</div>
-
-
-			<!-- Source of Income and Income Amount -->
-			<div class="horizontal-group">
-				<!-- Source of Income -->
-				<div class="form-group left" >
-				    <label class="label-title">Source of Income</label>
-				    <select class="form-input" id="level" >
-				      	<option value="S">Select an option</option>
-				      	<option value="B">Employed</option>
-				      	<option value="I">Self-employed</option>
-				      	<option value="A">Unemployed</option>
-				    </select>
-				</div>
-			  	
-			  	<!-- Income Amount -->
-				<div class="form-group right">
-				    <label for="experience" class="label-title">Income</label>
-				    <br>
-				    <input type="range" min="20" max="100" step="5"  value="0" id="experience" class="form-input" onchange="change();"  style="height:28px;width:78%;padding:0;">
-				    <span id="range-label">20K</span>
-				</div>
-			</div>
-
-			<!-- Bio -->
-	        <div class="form-group">
-	          <label for="choose-file" class="label-title">Bio</label>
-	          <textarea class="form-input" rows="3" cols="50" style="height:auto"></textarea>
-	        </div>
-
-		</div>
-	    
-	    <!-- form footer -->
-	    <div class="form-footer">
-	    	<span>* required</span>
-  			<button type="reset" class="btn" formaction="index.html">Reset</button>
-  			<button type="submit" class="btn">Create</button> 
-	    </div>
-		
-
-	</form>
 
 
 	

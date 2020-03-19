@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-	<title>Register Form</title>
+	<title>Login Form</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="code.js">	</script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+
+</script>
 </head>
 <body>
 	
@@ -12,29 +17,43 @@
 	<!-- Navbar -->
 	<div id = "navber">
 		<ul>
-		  <li><a href="#home">Home</a></li>
-		  <li><a href="index.html">Create Account</a></li>
+		  <li><a href="index.html">Home</a></li>
+		  <li><a href="signup.html">Create Account</a></li>
 		  <li><a class="active" href="#log-in">Log In</a></li>
-		  <li><a href="#contact">Contact</a></li>
+		  <li><a href="contact.html">Contact</a></li>
 		  <li><a href="#about" >About</a></li>
 		</ul>
 	</div>
 
-	<form class = "signup-form" action = "#">
+	<form class = "login-form" action = "#">
 	
 		
 	    <!-- form body -->
-	    <div class="form-body">
+	    <div class="logform-body">
+
 	    	<div class="log-left">
-	    		
+					<ul class="soc-list">
+					  <li>
+					    <a href="#">
+					      <i class="fab fa-facebook-f icon"></i>    </a>
+					  </li>
+					  <li>
+					    <a href="#"><i class="fab fa-twitter icon"></i></a>
+					  </li>
+					  <li>
+					    <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+					  <li>
+					    <a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
+					</ul>
 	    	</div>
 	    	
-
 	    	<div class="log-right">
-	    		<!-- form header -->
+
+	    		<!-- Heading -->
 			    <div >
 			    	<h1>Log In</h1>
 			    </div>
+
 	    		<!-- Email -->
 				<div class="form-group log">
 				  	<label for="email" class="label-title">Email*</label>
@@ -42,18 +61,15 @@
 				</div>
 
 				<!-- Password -->
-				<div class="horizontal-group">
-
-					<div class="form-group log">
-					    <label for="password" class="label-title">Password *</label>
-					    <input type="password" id="password" class="form-input" placeholder="enter your password" required="required">
-					</div>
-
+				<div class="form-group log">
+				    <label for="password" class="label-title">Password *</label>
+				    <input type="password" id="password" class="form-input" placeholder="enter your password" required="required">
 				</div>
 
 
+				<!-- checkbox and forgot password -->
 				<div class="horizontal-group label1">
-		    		<div class = "left" >
+		    		<div class = "left">
 		    			<label>
 				            <input type="checkbox" value="Rem">Remember Me</label>
 		    		</div>
@@ -63,20 +79,15 @@
 				            <p style="margin:0;">Forgot Password?</p></label>
 		    		</div>
 		    	</div>
-		    	<div class="right">
+
+		    	<!-- Button -->
+		    	<div class="logright">
 		  			<button type="reset"  class="btn" formaction="login.html">Reset</button>
 		  			<button type="submit" class="btn">Log In</button> 
 		    	</div>
-	    	
 
 		</div>
-	    
-	    
-		
 
 	</form>
-
-
-	
 </body>
 </html>
