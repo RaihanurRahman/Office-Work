@@ -7,21 +7,30 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="code.js">	</script>
 </head>
-<body>
+<body onload="showvalues()">
 	
 
 	<!-- Navbar -->
 	<div id = "navber">
 		<ul>
-		  <li><a class="active" href="#home">Home</a></li>
+		  <li><a href="#home">Home</a></li>
 		  <li><a href="signup.html">Create Account</a></li>
 		  <li><a href="login.html">Log In</a></li>
-		   <li><a href="stList.html">List</a></li>
+		  <li><a class="active" href="#stList">List</a></li>
 		  <li><a href="contact.html">Contact</a></li>
 		  <li><a href="#about" >About</a></li>
 		</ul>
 	</div>
-
+	<div class="List">
+		<table id = "List-Entry" >
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Gender</th>
+			</tr>
+			
+		</table>
+	</div>
 
 
 	

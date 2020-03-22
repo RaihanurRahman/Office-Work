@@ -398,3 +398,13 @@ li a:hover {
 	padding: 5px;
 	margin: 0;
 }
+.List{
+	width: 700px;
+	margin: 20px auto;
+}
+table,th,td{
+	margin: 30px auto; 
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 200px;
+}
